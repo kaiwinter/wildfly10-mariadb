@@ -20,7 +20,7 @@ RUN /opt/jboss/wildfly/bin/add-user.sh admin Admin#007 --silent
 COPY container-files/mariadb /
 COPY container-files/wildfly/run-wildfly.sh /
 
-EXPOSE 3306 8080 9990
+EXPOSE 3306 8080 9990 8787
 WORKDIR "/"
 ENV MARIADB_PASS 'admin'
 RUN chmod +x /run-maria.sh
